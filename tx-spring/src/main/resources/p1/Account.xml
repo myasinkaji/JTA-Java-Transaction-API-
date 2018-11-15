@@ -1,0 +1,25 @@
+<entity-mappings version="1.0"
+                 xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm
+        http://java.sun.com/xml/ns/persistence/orm_1_0.xsd ">
+
+    <entity class="ir.transaction.spring.data.p1.Account">
+
+        <table name="account100"></table>
+
+        <attributes>
+            <id name="accountNumber">
+                <column name="account_number"/>
+            </id>
+            <basic name="owner">
+                <column name="owner"/>
+            </basic>
+            <basic name="balance">
+                <column name="balance"/>
+            </basic>
+        </attributes>
+
+    </entity>
+
+</entity-mappings>
